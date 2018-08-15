@@ -1,0 +1,49 @@
+﻿<Page
+    x:Class="MusicPlayer.Help"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MusicPlayer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x1="using:System"
+    mc:Ignorable="d">
+
+    
+    <Grid x:Name="gridd" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0"  Margin="25">
+            <Button x:Name="bt_Back" Margin="30,0,0,0" Width="60" Height="30" Style="{StaticResource NavigationBackButtonNormalStyle}" Click="return_Click" ></Button>
+            <TextBlock Text="调整背景颜色" Margin="-530,0,0,0" FontSize="15" Width="150" VerticalAlignment="Center"/>
+            <ComboBox x:Name="ComColor" Margin="200,0,0,0" Width="100" VerticalAlignment="Stretch" SelectionChanged="ComColor_SelectionChanged">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Rectangle Fill="{Binding Name}" Width="16" Height="16" Margin="0,2,5,2" />
+                            <TextBlock Text="{Binding Name}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+
+            </ComboBox>
+            <TextBlock Text="调整字体样式"  Margin="-20,0,0,0" FontSize="15" Width="200" VerticalAlignment="Center"/>
+            <ComboBox x:Name="ComFont" Margin="437,0,0,0" Width="100" VerticalAlignment="Stretch" SelectionChanged="ComFont_SelectionChanged" >
+                
+            </ComboBox>
+            
+
+            <TextBlock Text="调整字体大小" Margin="510,0,0,0" FontSize="15" Width="200" VerticalAlignment="Center"/>
+
+            <Slider x:Name="FontSlider" Margin="655,0,0,0" Width="100" Orientation="Horizontal" ValueChanged="FontSlider_ValueChanged" Maximum="100" ></Slider>
+            <TextBlock Margin="380,-10,0,0" Text="滑动滑块，显示内容！！"  Width="160"></TextBlock>
+        </Grid>
+            <ScrollViewer x:Name="scrol" Margin="15" Grid.Row="1" HorizontalScrollBarVisibility="Auto" HorizontalScrollMode="Auto">
+                <StackPanel  Name="stPanel" Orientation="Horizontal" />
+            </ScrollViewer>
+    </Grid>
+
+
+</Page>
