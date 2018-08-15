@@ -1,0 +1,25 @@
+﻿<Window x:Class="RegisterClassroom.Help"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegisterClassroom"
+        mc:Ignorable="d"
+        Title="Help" Height="450" Width="800">
+   
+    
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/8.jpg"/>
+        </Grid.Background>
+        <Label Content="1、怎么使用查询教室的功能？ " HorizontalAlignment="Left" Height="35" Margin="135,54,0,0" VerticalAlignment="Top" Width="300" FontSize="20"/>
+
+
+        <Button Content="返回" HorizontalAlignment="Left" Height="31" Margin="10,10,0,0" VerticalAlignment="Top" Width="93" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="61" Margin="115,99,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="553"
+                   Text="   在功能选择界面点击‘查询’按钮，进入查询界面。在查询界面中，本系统提供了多种查询教室资源的方式，您可以在所查询教室名称、所查询时间 所需教室容量三项中任意选择一项、两项、三项来进行输入您所需要查找的教室信息，从而更加个性化的显示您所需要预定的教室，并可为您提供多种不同的选择。"/>
+        <Label Content="2、怎样使用预定教室功能？" HorizontalAlignment="Left" Height="35" Margin="135,171,0,0" VerticalAlignment="Top" Width="300" FontSize="20"/>
+        <TextBlock HorizontalAlignment="Left" Height="63" Margin="115,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="553"
+                    Text="   在功能选择界面点击'预定'按钮，进入预定界面。在预定界面中，您必须需要输入预定教室名称、预定时间、预定人数、预定人姓名即所有的预定信息，您才可以预定教室。建议您在预定教室之前首先对教室进行查找，这样预定成功的可能性会更大。"/>
+    </Grid>
+</Window>

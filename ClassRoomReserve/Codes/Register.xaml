@@ -1,0 +1,19 @@
+﻿<Window x:Class="RegisterClassroom.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RegisterClassroom"
+        mc:Ignorable="d"
+        Title="Register" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="images/8.jpg"/>
+        </Grid.Background>
+        <Label HorizontalAlignment="Left" Height="45" Margin="260,50,0,0"  Content="教室预定功能界面" VerticalAlignment="Top" Width="250" FontSize="30" />
+        <Button Content="查询" HorizontalAlignment="Left" Height="29" Margin="323,142,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_1"/>
+        <Button Content="预定" HorizontalAlignment="Left" Height="25" Margin="323,194,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_2"/>
+        <Button Content="帮助" HorizontalAlignment="Left" Height="30" Margin="323,246,0,0" VerticalAlignment="Top" Width="103" Click="Button_Click_3"/>
+
+    </Grid>
+</Window>
