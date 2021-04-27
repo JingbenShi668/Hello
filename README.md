@@ -1,1 +1,1 @@
-# Some small projects at the undergraduate level
+Some small projects at the undergraduate level
